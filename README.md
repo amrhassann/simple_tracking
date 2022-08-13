@@ -4,6 +4,7 @@ simple tracking app
 - there is two kinds of users, truck driver and Admin
   ## driver
   -- there is two actions for the driver:
+     <br>
      --- I- share name and phone, and share his location, all of this data will be sharable on firestore.
      <br>
      
@@ -13,4 +14,7 @@ simple tracking app
   -- the admin can login by email and password to see all drivers and track one of them without share his location.
   <br>
   admin credentials 
-  email: amrkhlifa@gmail.com, pass : 12345678
+  <br>
+  email: amrkhlifa@gmail.com
+  <br>
+  pass : 12345678
