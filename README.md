@@ -4,7 +4,9 @@ simple tracking app
 - there is two kinds of users, truck driver and Admin
   ## driver
   -- there is two actions for the driver:
-     --- I- share inter name and phone, and share his location, all of this data will be sharable on firestore.
+     --- I- share name and phone, and share his location, all of this data will be sharable on firestore.
+     <br>
+     
      --- II- also the driver can see other drivers and track one of them by pressing on Arrow icon.
   <br>
   ## Admin
