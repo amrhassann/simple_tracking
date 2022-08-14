@@ -4,13 +4,14 @@ import 'package:tracking/presentation/res/style_manager.dart';
 
 PreferredSizeWidget customAppbar({
   required String title,
-  List<Widget>? actions
+  List<Widget>? actions,
+  Color backgroundColor = AppColors.white,
 }){
   return AppBar(
     iconTheme: const IconThemeData(
         color: AppColors.grey
     ),
-    backgroundColor: AppColors.white,
+    backgroundColor: backgroundColor,
     elevation: 0.0,
     centerTitle: true,
     title:  Text(title, style: getMediumStyle(fontSize: 18, textColor: AppColors.grey),),

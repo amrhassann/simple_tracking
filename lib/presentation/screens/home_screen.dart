@@ -17,8 +17,8 @@ class HomeScreen extends StatelessWidget{
     var cubit = AppCubit.get(context);
     var currentUserName = cubit.userNameController.text;
     return Scaffold(
-      backgroundColor: AppColors.white,
-      appBar: customAppbar(title: 'All Drivers'),
+      backgroundColor: Colors.grey[200]!,
+      appBar: customAppbar(title: 'All Drivers',backgroundColor: Colors.grey[200]!),
       body: StreamBuilder(
         stream: cubit.allDrivers.snapshots(),
         builder: (context, AsyncSnapshot<QuerySnapshot> snapshot) {

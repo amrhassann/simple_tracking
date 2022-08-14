@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:tracking/data/location.dart';
 import 'package:tracking/domain/bloc/cubit/app_cubit.dart';
+import 'package:tracking/presentation/res/app_colors.dart';
 
 
 class MapScreen extends StatefulWidget {
@@ -71,7 +72,9 @@ class _MapScreenState extends State<MapScreen> {
       ),
 
       floatingActionButtonLocation: FloatingActionButtonLocation.centerFloat,
-      floatingActionButton: widget.isDriver?FloatingActionButton(onPressed: (){
+      floatingActionButton: widget.isDriver?FloatingActionButton(
+        backgroundColor: AppColors.initial,
+        onPressed: (){
         LocationHelper locationHelper= LocationHelper();
         setState(() {
           locationHelper.locationSubscription?.cancel();
