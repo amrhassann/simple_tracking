@@ -1,10 +1,10 @@
-import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:flutter/material.dart';
 import 'package:tracking/domain/bloc/cubit/app_cubit.dart';
-import 'package:tracking/presentation/screens/map_screen.dart';
 import 'package:tracking/presentation/custom_widgets/custom_app_bar.dart';
 import 'package:tracking/presentation/custom_widgets/driver_item.dart';
 import 'package:tracking/presentation/res/app_colors.dart';
+import 'package:tracking/presentation/screens/map_screen.dart';
 
 class HomeScreen extends StatelessWidget{
   HomeScreen({Key? key, required this.isDriver}) : super(key: key);

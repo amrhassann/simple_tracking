@@ -6,9 +6,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
-import 'package:tracking/data/location.dart';
-import 'package:tracking/domain/bloc/states/app_states.dart';
 import 'package:location/location.dart' as loc;
+import 'package:tracking/data/location.dart';
+import 'package:tracking/data/repository/send_driver_data.dart';
+import 'package:tracking/domain/bloc/states/app_states.dart';
 import 'package:tracking/presentation/res/app_colors.dart';
 
 class AppCubit extends Cubit<AppStates> {
@@ -24,10 +25,10 @@ class AppCubit extends Cubit<AppStates> {
   TextEditingController passwordController = TextEditingController();
 
   // instances
-  SendUserData sendUserData = SendUserData();
+  SendDriverData sendUserData = SendDriverData();
   FirebaseAuth firebaseAuth = FirebaseAuth.instance;
   LocationHelper locationHelper = LocationHelper();
-  SendRequest sendRequest = SendRequest();
+  LocationPermission sendRequest = LocationPermission();
 
   // Collection that get all drivers from firestore
   CollectionReference<Map<String, dynamic>> allDrivers =  FirebaseFirestore.instance.collection('location');
